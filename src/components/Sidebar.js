@@ -11,8 +11,8 @@ const Sidebar = ({content,handleContent}) => {
     }
 
   return (
-    <div>
-      <h1>notes</h1><button onClick={addNewNote}>+</button>
+    <div className='sidebar'>
+      <h1>notes <button onClick={addNewNote}>+</button></h1>
       {
       userNotes.map((note,index)=>{
        { console.log(note)}
