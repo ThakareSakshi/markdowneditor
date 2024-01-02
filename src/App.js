@@ -14,6 +14,12 @@ function App() {
     setContent(text);
   }
 
+  const handleEvents=(text)=>{
+   
+    setContent(text)
+
+  }
+
  
 
   return (
@@ -22,7 +28,7 @@ function App() {
       <div className='main-body'>
          
           <div className='editor'>
-              <Header ></Header>
+              <Header handleEvents={handleEvents} content={content}></Header>
               <textarea value={content} onChange={(e)=>setContent(e.target.value)}></textarea>
               
           </div>

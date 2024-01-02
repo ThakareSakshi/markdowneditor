@@ -16,7 +16,7 @@ const Sidebar = ({content,handleContent}) => {
       {
       userNotes.map((note,index)=>{
        { console.log(note)}
-        return <Notes  key={index} textcontent={note}></Notes>
+        return <Notes  key={index} textcontent={note} clickevent={handleContent}></Notes>
       })
       }
     </div>
