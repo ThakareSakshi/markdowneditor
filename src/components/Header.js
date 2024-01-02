@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Header = (props) => {
+
+
+    const handleEvent=()=>{
+        console.log("eventclicked")
+    }
   return (
     <div className='buttons'>
 
